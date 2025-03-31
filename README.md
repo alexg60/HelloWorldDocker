@@ -5,6 +5,6 @@ Docker uses a dockerfile, which includes instructions to set up the environment 
 The Dockerfile pulls the base image from OpenJDK, copies the compiled program into the container, and runs the program using the CMD instruction
 
 ## Docker in Action
-1. The `Dockerfile` uses an OpenJDK base image: `FROM openjdk:23`.
-2. It copies the Java class files from the local environment into the container: `COPY out/production/HelloWorldDocker/ /app`.
-3. It sets the working directory and executes the Java application using `CMD [java, Main]`.
+1. The Dockerfile uses an OpenJDK base image: FROM openjdk:22.
+2. It copies the Java class files from the local environment into the container: COPY out/production/HelloWorldDocker/ /app.
+3. It sets the working directory and executes the Java application using CMD [java, Main].
